@@ -1,0 +1,21 @@
+{
+  "name": "be.belgium.studend",
+  "version": "1.0.0",
+  "description": "Little project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/main.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/main.js\"",
+    "build": "npx tsc"
+  },
+  "author": "Eden Gosset",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
